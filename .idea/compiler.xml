@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="etsy-ui-automation-with-selenium" />
+        <module name="gorest-api-test-automation-restassured" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="etsy-ui-automation-with-selenium" target="20" />
+    </bytecodeTargetLevel>
   </component>
 </project>

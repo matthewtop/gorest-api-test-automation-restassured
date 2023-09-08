@@ -1,0 +1,6 @@
+pl\globallogic\verification\JsonSchemaValidationTest.class
+pl\globallogic\gorest\BaseUserApiTest.class
+pl\globallogic\gorest\testdata\UserApiTestDataGenerator.class
+pl\globallogic\gorest\UserApiCrudBasicVerificationTest.class
+pl\globallogic\gorest\model\CreateUserDTO.class
+pl\globallogic\verification\ConfigurationVerificationTest.class

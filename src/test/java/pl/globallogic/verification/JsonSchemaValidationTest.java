@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pl.globallogic.gorest.constants.HostConfigurationParams;
 import pl.globallogic.gorest.dto.CreateUserRequestDTO;
-import pl.globallogic.gorest.testdata.BaseUserApiTest;
+import pl.globallogic.gorest.BaseUserApiTest;
 
 import static io.restassured.RestAssured.given;
 

@@ -1,0 +1,5 @@
+pl\globallogic\gorest\constants\HostConfigurationParams.class
+pl\globallogic\gorest\dto\CreateUserRequestDTO.class
+pl\globallogic\gorest\apis\UserAPI.class
+pl\globallogic\gorest\dto\CreateUserResponseDTO.class
+pl\globallogic\gorest\model\OurUser.class

@@ -1,20 +1,17 @@
-package pl.globallogic.gorest.testdata;
+package pl.globallogic.gorest;
 
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pl.globallogic.gorest.apis.UserAPI;
 import pl.globallogic.gorest.dto.CreateUserRequestDTO;
 import pl.globallogic.gorest.model.OurUser;
-import pl.globallogic.gorest.testdata.UserApiCrudBasicVerificationTest;
+import pl.globallogic.gorest.testdata.UserApiTestDataGenerator;
 
 import java.util.List;
 
-import static io.restassured.RestAssured.when;
 
-
-public class UserApiCrudBasicVerificationTest extends BaseUserApiTest{
+public class UserApiCrudBasicVerificationTest extends BaseUserApiTest {
     private String ourUserId;
 
     @BeforeMethod
@@ -49,7 +46,7 @@ public class UserApiCrudBasicVerificationTest extends BaseUserApiTest{
 
     @Test
     public void shouldUpdateExistingUserWithNewData(){
-        CreateUserRequestDTO userPayload = UserApiTestDatGenerator.getRandomUser();
+        CreateUserRequestDTO userPayload = UserApiTestDataGenerator.getRandomUser();
         OurUser updatedUser = UserAPI.updateUserInfo(ourUserId,userPayload);
         Assert.assertEquals(userPayload.email(),updatedUser.getEmail());
     }

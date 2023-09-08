@@ -13,10 +13,9 @@ import static io.restassured.RestAssured.when;
 
 public class UserAPI {
     protected Logger logger = LoggerFactory.getLogger(UserAPI.class);
-    private final String endpoint = "/users";
+    private static final String endpoint = "/users";
 
     public UserAPI(){
-
     }
 
     public List<OurUser> getAllUsers(){
@@ -26,7 +25,7 @@ public class UserAPI {
 
     public OurUser getUser(String userId){
         return given().pathParam("userId", userId).when()
-                .get(endpoint+"/{userId}").
+                .get(endpoint + "/{userId}").
                 then().
                 extract().response().as(OurUser.class);
     }
@@ -37,11 +36,11 @@ public class UserAPI {
 
     public static OurUser updateUserInfo(String userId, CreateUserRequestDTO userPayload){
         return given().pathParam("userId", userId).body(userPayload).when().
-                put(endpoint+"/{userId}").then().extract().response().as(OurUser.class);
+                put(endpoint,"/{userId}").then().extract().response().as(OurUser.class);
     }
 
     public boolean deleteUser(String ourUserId){
         return given().pathParam("userId",ourUserId)
-                .when().delete(endpoint+"/{userId}").getStatusCode()==204;
+                .when().delete(endpoint,"/{userId}").getStatusCode()==204;
     }
 }

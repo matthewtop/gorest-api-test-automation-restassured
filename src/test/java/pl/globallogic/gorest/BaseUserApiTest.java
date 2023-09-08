@@ -1,4 +1,4 @@
-package pl.globallogic.gorest.testdata;
+package pl.globallogic.gorest;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
