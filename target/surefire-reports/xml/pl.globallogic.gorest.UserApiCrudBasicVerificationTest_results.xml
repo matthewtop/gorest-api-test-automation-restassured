@@ -4,7 +4,7 @@
            failures="0"
            errors="0"
            skipped="9"
-           time="2,009">
+           time="1,902">
   <properties />
   
             <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
@@ -19,19 +19,19 @@
             <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
           <skipped />
     </testcase>
+            <testcase name="shouldDeleteUserUsingId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
+          <skipped />
+    </testcase>
             <testcase name="shouldUpdateExistingUserWithNewData" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
+          <skipped />
+    </testcase>
+            <testcase name="userDataShouldContainId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
           <skipped />
     </testcase>
             <testcase name="shouldFetchAllUsersFromDefaultPageBodyExtract" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
           <skipped />
     </testcase>
             <testcase name="shouldCreateAUserAndReturnAnId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="userDataShouldContainId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="shouldDeleteUserUsingId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
           <skipped />
     </testcase>
   
