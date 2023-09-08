@@ -13,8 +13,8 @@ public class UserApiTestDataGenerator {
     }
 
     private static String getRandomEmail(){
-        String email = "mati.email"+(int)(Math.random()*2000000)+"hotmail.com";
-        logger.info("Generated email: {}",email);
+        String email = "mati.email" + (int) (Math.random()*67237464) + "@hotmail.com";
+        logger.info("Generated email: {}", email);
         return email;
     }
 }

@@ -8,7 +8,6 @@ public class OurUser {
     private String status;
 
     public OurUser(){
-
     }
     public int getId(){return id;}
 
@@ -32,14 +31,12 @@ public class OurUser {
 
     @Override
     public String toString(){
-        return "OurUser{"+
-                "id= " +id+
-                ", name= '" +name+ '\'' +
-                ", email= '" +email+ '\'' +
-                ", gender= '" +gender+ '\'' +
-                ", status= '" +status+ '\'' +
+        return "OurUser{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
-
-
 }

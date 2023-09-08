@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="4.018" tests="11" errors="0" skipped="9" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="4.145" tests="11" errors="0" skipped="9" failures="1">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Users\mateu\.jdks\openjdk-20.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\mateu\AppData\Local\Temp\surefire9392118103729600157\surefirebooter-20230909003634297_3.jar C:\Users\mateu\AppData\Local\Temp\surefire9392118103729600157 2023-09-09T00-36-34_167-jvmRun1 surefire-20230909003634297_1tmp surefire_0-20230909003634297_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mateu\AppData\Local\Temp\surefire2161122364642739454\surefirebooter-20230909014039314_3.jar C:\Users\mateu\AppData\Local\Temp\surefire2161122364642739454 2023-09-09T01-40-39_177-jvmRun1 surefire-20230909014039314_1tmp surefire_0-20230909014039314_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\dev\javaPractice\gorest-api-test-automation-restassured\target\test-classes;D:\dev\javaPractice\gorest-api-test-automation-restassured\target\classes;C:\Users\mateu\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\mateu\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\mateu\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\mateu\.m2\repository\com\github\sdrss\reportng\2.7.0\reportng-2.7.0.jar;C:\Users\mateu\.m2\repository\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\mateu\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\mateu\.m2\repository\commons-lang\commons-lang\2.1\commons-lang-2.1.jar;C:\Users\mateu\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\mateu\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\mateu\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2.jar;C:\Users\mateu\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\mateu\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\mateu\.m2\repository\com\google\guava\guava\25.1-android\guava-25.1-android.jar;C:\Users\mateu\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\mateu\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\mateu\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\mateu\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\mateu\.m2\repository\org\testng\reportng\1.2.2\reportng-1.2.2.jar;C:\Users\mateu\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;C:\Users\mateu\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\mateu\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mateu\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\mateu\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\mateu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mateu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\mateu\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\mateu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\mateu\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\mateu\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\mateu\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\mateu\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\mateu\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\mateu\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\mateu\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\mateu\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\mateu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mateu\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="testng.Failed" value="0"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mateu\AppData\Local\Temp\surefire9392118103729600157\surefirebooter-20230909003634297_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mateu\AppData\Local\Temp\surefire2161122364642739454\surefirebooter-20230909014039314_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9-78"/>
@@ -66,7 +66,7 @@
     <property name="testng.Passed" value="2"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testSetUp" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="2.9">
+  <testcase name="testSetUp" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="2.983">
     <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])&#10; at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: 
 com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: "gender", "status", "id", "email", "name"])
  at [Source: (String)"{"message":"Authentication failed"}"; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser["message"])
@@ -92,7 +92,7 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
 	at pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)
-	at pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:20)
+	at pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -143,7 +143,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
 	... 57 more
 ]]></failure>
-    <system-out><![CDATA[00:36:35.619 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mati.email181907hotmail.com
+    <system-out><![CDATA[01:40:40.666 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mati.email2793497@hotmail.com
 ]]></system-out>
   </testcase>
   <testcase name="testSetUp" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.0">
@@ -173,8 +173,8 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
   <testcase name="userDataShouldContainId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.0">
     <skipped message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])&#10; at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])"/>
   </testcase>
-  <testcase name="shouldLogRequestAndResponseData" classname="pl.globallogic.verification.ConfigurationVerificationTest" time="0.772">
-    <system-out><![CDATA[00:36:37.530 [main] INFO  p.g.v.ConfigurationVerificationTest - Verify test automation framework configuration test
+  <testcase name="shouldLogRequestAndResponseData" classname="pl.globallogic.verification.ConfigurationVerificationTest" time="0.796">
+    <system-out><![CDATA[01:40:42.648 [main] INFO  p.g.v.ConfigurationVerificationTest - Verify test automation framework configuration test
 ]]></system-out>
   </testcase>
 </testsuite>

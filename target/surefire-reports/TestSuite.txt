@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 4.018 s <<< FAILURE! -- in TestSuite
-pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp -- Time elapsed: 2.900 s <<< FAILURE!
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 4.145 s <<< FAILURE! -- in TestSuite
+pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp -- Time elapsed: 2.983 s <<< FAILURE!
 java.lang.RuntimeException: 
 com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: "gender", "status", "id", "email", "name"])
  at [Source: (String)"{"message":"Authentication failed"}"; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser["message"])
@@ -28,7 +28,7 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
 	at pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)
-	at pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:20)
+	at pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

@@ -3,11 +3,13 @@
            tests="1"
            failures="0"
            errors="0"
-           skipped="0"
-           time="2,217">
+           skipped="1"
+           time="1,389">
   <properties />
   
+            <testcase name="shouldCreateAUserAndReturnAnId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="shouldFetchAllUsersFromDefaultPage" time="2,217" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
-      
+  
 </testsuite>

@@ -10,7 +10,6 @@ import pl.globallogic.gorest.testdata.UserApiTestDataGenerator;
 
 import java.util.List;
 
-
 public class UserApiCrudBasicVerificationTest extends BaseUserApiTest {
     private String ourUserId;
 
@@ -33,14 +32,14 @@ public class UserApiCrudBasicVerificationTest extends BaseUserApiTest {
     public void userDataShouldContainId(){
         OurUser mati = userAPI.getUser(ourUserId);
         String expectedUserName = "Mateusz Tolpa";
-        Assert.assertEquals(expectedUserName,mati.getName());
+        Assert.assertEquals(expectedUserName, mati.getName());
     }
 
     @Test
     public void shouldCreateAUserAndReturnAnId(){
         var userPayload = UserApiTestDataGenerator.getRandomUser();
         OurUser user = userAPI.createUser(userPayload);
-        logger.info("User object: {}",user);
+        logger.info("User object: {}", user);
         Assert.assertNotEquals(user.getId(),0);
     }
 

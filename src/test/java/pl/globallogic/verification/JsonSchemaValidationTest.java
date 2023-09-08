@@ -29,9 +29,9 @@ public class JsonSchemaValidationTest extends BaseUserApiTest {
 
     @Test(enabled = false)
     public void responseShouldBeValidAgainstSchema(){
-        String userId=ourUserId;
+        String userId = ourUserId;
         given().
-                pathParam("userId",userId).
+                pathParam("userId", userId).
                 contentType(ContentType.JSON).
                 when().
                 get(ENDPOINT+"/{userId}").
@@ -41,6 +41,6 @@ public class JsonSchemaValidationTest extends BaseUserApiTest {
     }
 
     private static String getRandomEmail(){
-        return "mati.email"+(int)(Math.random()*200000000)+"@hotmail.com";
+        return "mati.email" + (int) (Math.random() *200000)+"@hotmail.com";
     }
 }

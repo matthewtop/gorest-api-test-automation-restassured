@@ -4,7 +4,7 @@
            failures="0"
            errors="0"
            skipped="9"
-           time="1,902">
+           time="1,971">
   <properties />
   
             <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
