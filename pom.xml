@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.globallogic</groupId>
-    <artifactId>etsy-ui-automation-with-selenium</artifactId>
+    <artifactId>gorest-api-test-automation-restassured</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

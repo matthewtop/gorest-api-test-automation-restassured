@@ -35,7 +35,7 @@ public class UserAPI {
         return given().body(userPayload).when().post(endpoint).then().extract().response().as(OurUser.class);
     }
 
-    public OurUser updateUserInfo(String userId, CreateUserRequestDTO userPayload){
+    public static OurUser updateUserInfo(String userId, CreateUserRequestDTO userPayload){
         return given().pathParam("userId", userId).body(userPayload).when().
                 put(endpoint+"/{userId}").then().extract().response().as(OurUser.class);
     }
