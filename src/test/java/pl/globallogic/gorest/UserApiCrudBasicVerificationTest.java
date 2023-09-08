@@ -6,11 +6,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pl.globallogic.gorest.model.CreateUserDTO;
+import pl.globallogic.gorest.testdata.BaseUserApiTest;
 
 
 import static io.restassured.RestAssured.*;
 
-public class UserApiCrudBasicVerificationTest extends BaseApiTest {
+public class UserApiCrudBasicVerificationTest extends BaseUserApiTest {
 
 //    private static final String BASE_URI = "https://gorest.co.in";
 //    private static final String BASE_PATH = "/pubic/v2";
