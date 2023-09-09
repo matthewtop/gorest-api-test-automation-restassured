@@ -3,7 +3,6 @@ package pl.globallogic.gorest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pl.globallogic.gorest.apis.UserAPI;
 import pl.globallogic.gorest.dto.CreateUserRequestDTO;
 import pl.globallogic.gorest.model.OurUser;
 import pl.globallogic.gorest.testdata.UserApiTestDataGenerator;
@@ -36,7 +35,7 @@ public class UserApiCrudBasicVerificationTest extends BaseUserApiTest{
     @Test
     public void userDataShouldContainId() {
         OurUser ivan = userAPI.getUser(ourUserId);
-        String expectedUserName = "Ivan Paulouski";
+        String expectedUserName = "Mateusz Tolpa";
         Assert.assertEquals(expectedUserName, ivan.getName());
     }
     //should create new user and return id

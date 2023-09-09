@@ -1,0 +1,5 @@
+# Created at 2023-09-09T02:02:52.908
+Boot Manifest-JAR contains absolute paths in classpath 'D:\dev\javaPractice\gorest-api-test-automation-restassured\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0,780">
+           time="0,361">
   <properties />
   
   
-            <testcase name="shouldLogRequestAndResponseData" time="0,780" classname="pl.globallogic.verification.ConfigurationVerificationTest" />
+            <testcase name="shouldLogRequestAndResponseData" time="0,361" classname="pl.globallogic.verification.ConfigurationVerificationTest" />
       
 </testsuite>

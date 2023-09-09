@@ -15,14 +15,14 @@ public class JsonSchemaValidationTest extends BaseUserApiTest {
     private static final String ENDPOINT = HostConfigurationParams.BASE_URI
             + HostConfigurationParams.BASE_PATH + "/users";
 
-    private static String token = "edb4afe94ffa5dd5ee817c3eb2ff3a0408777f6781098e96969cd9cb742050d4";
+    private static final String token = "edb4afe94ffa5dd5ee817c3eb2ff3a0408777f6781098e96969cd9cb742050d4";
 
     private String ourUserId;
 
     @BeforeMethod
     public void testSetUp() {
         CreateUserRequestDTO userPayload =
-                new CreateUserRequestDTO(getRandomEmail(), "Ivan Paulouski", "male", "active" );
+                new CreateUserRequestDTO(getRandomEmail(), "Mateusz Tolpa", "male", "active" );
         ourUserId = String.valueOf(userAPI.createUser(userPayload).getId());
     }
 
@@ -40,7 +40,6 @@ public class JsonSchemaValidationTest extends BaseUserApiTest {
     }
 
     private static String getRandomEmail() {
-        String email = "ivan.email" + (int) (Math.random() * 2000000) + "@hotmail.com";
-        return email;
+        return "mati.email" + (int) (Math.random() * 2000000) + "@hotmail.com";
     }
 }

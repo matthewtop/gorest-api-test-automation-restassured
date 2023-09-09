@@ -74,7 +74,7 @@
 	  	  <tr>
 	    <th>Total Time : </th>
 	    <th></th>
-	    <th>00:00:03</th> 
+	    <th>00:00:08</th> 
 	  </tr>
 	  <tr>
 	    <th>Total Steps : </th>
@@ -84,7 +84,7 @@
 	  <tr>
 	    <th>Status : </th>
 	    <th></th>
-	    <th><font color="yellow">SKIP</font></th> 
+	    <th><font color="green">PASS</font></th> 
 	  </tr>
 	</table>
 </div>
@@ -106,1021 +106,122 @@
 		</thead>
 		<tbody>
 		
-									<tr>
-		<td class="time">1694216829928</td>
-		<td class="header failedConfig" colspan="4" onClick="toggleElement('73521035-542b-4818-9122-8588871419d1','block');changeSingleIcon('span-73521035-542b-4818-9122-8588871419d1');" title="Click to expand/collapse" style="cursor: pointer;">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-73521035-542b-4818-9122-8588871419d1' class="glyphicon glyphicon-menu-down"></span></div>
-		</td>
-	</tr>
-			<tr>
-		<td class="time">1694216829928</td>
-		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
-		<span class="description"><b>Method: </b>testSetUp</span><br>
-				<span class="duration"><b>Duration: </b>2,058s</span><br>
-		</td>
-		<td class="resultConfiguration">
-										<div class="stackTrace" id="73521035-542b-4818-9122-8588871419d1">
-								<a href="javascript:toggleElement('exception-73521035-542b-4818-9122-8588871419d1','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br>
-		    <div class="stackTrace" id="exception-73521035-542b-4818-9122-8588871419d1">
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br>
-							org.testng.TestRunner.run(TestRunner.java:621)<br>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br>
-							org.testng.TestNG.run(TestNG.java:1082)<br>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br>
-									    <b>Caused by: </b> <a href="javascript:toggleElement('causedBy-73521035-542b-4818-9122-8588871419d1','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br>
-			    <div class="stackTrace" id="causedBy-73521035-542b-4818-9122-8588871419d1">
-									com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br>
-									com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br>
-									com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br>
-									com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br>
-									com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br>
-									com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br>
-									com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br>
-									com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br>
-									com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br>
-									com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br>
-									io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br>
-									io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br>
-									org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br>
-									io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br>
-									io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br>
-									org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br>
-									io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br>
-									io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br>
-									org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br>
-									io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br>
-									io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br>
-									org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br>
-									org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br>
-									io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br>
-									io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br>
-									pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br>
-									pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
-									java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>
-									java.base/java.lang.reflect.Method.invoke(Method.java:578)<br>
-									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br>
-									org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br>
-									org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br>
-									org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br>
-									org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br>
-									org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br>
-									org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br>
-									org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br>
-									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br>
-									org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br>
-									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br>
-									org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br>
-									java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>
-									org.testng.TestRunner.privateRun(TestRunner.java:848)<br>
-									org.testng.TestRunner.run(TestRunner.java:621)<br>
-									org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br>
-									org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br>
-									org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br>
-									org.testng.SuiteRunner.run(SuiteRunner.java:336)<br>
-									org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
-									org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br>
-									org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br>
-									org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br>
-									org.testng.TestNG.runSuites(TestNG.java:1114)<br>
-									org.testng.TestNG.run(TestNG.java:1082)<br>
-									org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br>
-									org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br>
-									org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br>
-									org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br>
-									org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br>
-									org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br>
-									org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br>
-									org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br>
-								</div>
-						</div>
-				</div>
-		</td>
-	</tr>
-						
-					    				<tr>
-		<td class="time">1694216831995</td>
-		<td class="header skippedConfig" colspan="4" onClick="toggleElement('6dae93cf-3ee0-4772-ab04-91634b592189','block');changeSingleIcon('span-6dae93cf-3ee0-4772-ab04-91634b592189');" title="Click to expand/collapse">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-6dae93cf-3ee0-4772-ab04-91634b592189' class="glyphicon glyphicon-menu-down"></span></div>
-		</td>
-	</tr>
-		<tr>
-		<td class="time">1694216831995</td>
-		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
-		<span class="description"><b>Method: </b>testSetUp</span><br>
-				<span class="duration"><b>Duration: </b>0,000s</span><br>
-		</td>
-		<td class="resultConfiguration">
-				 														<div class="stackTrace" id="6dae93cf-3ee0-4772-ab04-91634b592189">
-							</div>
-		</td>
-	</tr>
-				<tr>
-		<td class="time">1694216831999</td>
-		<td class="header skippedConfig" colspan="4" onClick="toggleElement('f6701f4c-08b3-4c12-825a-5dc363fa604c','block');changeSingleIcon('span-f6701f4c-08b3-4c12-825a-5dc363fa604c');" title="Click to expand/collapse">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-f6701f4c-08b3-4c12-825a-5dc363fa604c' class="glyphicon glyphicon-menu-down"></span></div>
-		</td>
-	</tr>
-		<tr>
-		<td class="time">1694216831999</td>
-		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
-		<span class="description"><b>Method: </b>testSetUp</span><br>
-				<span class="duration"><b>Duration: </b>0,000s</span><br>
-		</td>
-		<td class="resultConfiguration">
-				 														<div class="stackTrace" id="f6701f4c-08b3-4c12-825a-5dc363fa604c">
-							</div>
-		</td>
-	</tr>
-				<tr>
-		<td class="time">1694216831997</td>
-		<td class="header skippedConfig" colspan="4" onClick="toggleElement('c5bd533a-c803-44ca-bb3f-8508bc051eaf','block');changeSingleIcon('span-c5bd533a-c803-44ca-bb3f-8508bc051eaf');" title="Click to expand/collapse">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-c5bd533a-c803-44ca-bb3f-8508bc051eaf' class="glyphicon glyphicon-menu-down"></span></div>
-		</td>
-	</tr>
-		<tr>
-		<td class="time">1694216831997</td>
-		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
-		<span class="description"><b>Method: </b>testSetUp</span><br>
-				<span class="duration"><b>Duration: </b>0,000s</span><br>
-		</td>
-		<td class="resultConfiguration">
-				 														<div class="stackTrace" id="c5bd533a-c803-44ca-bb3f-8508bc051eaf">
-							</div>
-		</td>
-	</tr>
-				<tr>
-		<td class="time">1694216831998</td>
-		<td class="header skippedConfig" colspan="4" onClick="toggleElement('ee9514ca-3540-4522-a157-5321919f64eb','block');changeSingleIcon('span-ee9514ca-3540-4522-a157-5321919f64eb');" title="Click to expand/collapse">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-ee9514ca-3540-4522-a157-5321919f64eb' class="glyphicon glyphicon-menu-down"></span></div>
-		</td>
-	</tr>
-		<tr>
-		<td class="time">1694216831998</td>
-		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
-		<span class="description"><b>Method: </b>testSetUp</span><br>
-				<span class="duration"><b>Duration: </b>0,000s</span><br>
-		</td>
-		<td class="resultConfiguration">
-				 														<div class="stackTrace" id="ee9514ca-3540-4522-a157-5321919f64eb">
-							</div>
-		</td>
-	</tr>
-	    	    		
+				
+				
 												
 				
-											<tr>
-	<td class="time">1694216831993</td>
-	<td class="header skipped" colspan="4" onClick="toggleElement('0afbc5eb-39df-4c29-aff3-2631b074bab4','block');changeSingleIcon('span-0afbc5eb-39df-4c29-aff3-2631b074bab4');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-0afbc5eb-39df-4c29-aff3-2631b074bab4' class="glyphicon glyphicon-menu-down"></span></div>
-	</td>
-	</tr>
-<tr>
-	<td class="time">1694216831993</td>
-	<td class="methodTest">
-		<span class="description"><b>Method: </b>shouldCreateAUserAndReturnAnId</span><br>
-			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,000s</span><br>
-	</td>
-	<td class="result">
-		 									<div class="stackTrace" id="0afbc5eb-39df-4c29-aff3-2631b074bab4" style="display: block;">
-						<a href="javascript:toggleElement('exception-0afbc5eb-39df-4c29-aff3-2631b074bab4','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
-		<div class="stackTrace" id="exception-0afbc5eb-39df-4c29-aff3-2631b074bab4">
-					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
-					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-					io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-					io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-					io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-					io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-					org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-					org.testng.TestRunner.run(TestRunner.java:621)<br/>
-					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-					org.testng.TestNG.run(TestNG.java:1082)<br/>
-					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-0afbc5eb-39df-4c29-aff3-2631b074bab4','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
-			<div class="stackTrace" id="causedBy-0afbc5eb-39df-4c29-aff3-2631b074bab4">
-							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
-							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
-							com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br/>
-							com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br/>
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br/>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-							org.testng.TestRunner.run(TestRunner.java:621)<br/>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-							org.testng.TestNG.run(TestNG.java:1082)<br/>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-						</div>
-				</div>
-		</td>
-	</div>
-</tr>
-					<tr>
-	<td class="time">1694216831997</td>
-	<td class="header skipped" colspan="4" onClick="toggleElement('d1780bb2-78ab-42ac-9d05-700e0edec0e5','block');changeSingleIcon('span-d1780bb2-78ab-42ac-9d05-700e0edec0e5');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-d1780bb2-78ab-42ac-9d05-700e0edec0e5' class="glyphicon glyphicon-menu-down"></span></div>
-	</td>
-	</tr>
-<tr>
-	<td class="time">1694216831997</td>
-	<td class="methodTest">
-		<span class="description"><b>Method: </b>shouldFetchAllUsersFromDefaultPageBodyExtract</span><br>
-			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,000s</span><br>
-	</td>
-	<td class="result">
-		 									<div class="stackTrace" id="d1780bb2-78ab-42ac-9d05-700e0edec0e5" style="display: block;">
-						<a href="javascript:toggleElement('exception-d1780bb2-78ab-42ac-9d05-700e0edec0e5','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
-		<div class="stackTrace" id="exception-d1780bb2-78ab-42ac-9d05-700e0edec0e5">
-					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
-					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-					io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-					io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-					io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-					io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-					org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-					org.testng.TestRunner.run(TestRunner.java:621)<br/>
-					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-					org.testng.TestNG.run(TestNG.java:1082)<br/>
-					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-d1780bb2-78ab-42ac-9d05-700e0edec0e5','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
-			<div class="stackTrace" id="causedBy-d1780bb2-78ab-42ac-9d05-700e0edec0e5">
-							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
-							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
-							com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br/>
-							com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br/>
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br/>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-							org.testng.TestRunner.run(TestRunner.java:621)<br/>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-							org.testng.TestNG.run(TestNG.java:1082)<br/>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-						</div>
-				</div>
-		</td>
-	</div>
-</tr>
-					<tr>
-	<td class="time">1694216831999</td>
-	<td class="header skipped" colspan="4" onClick="toggleElement('854bbe41-18b9-477d-9ead-67625997e3a6','block');changeSingleIcon('span-854bbe41-18b9-477d-9ead-67625997e3a6');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-854bbe41-18b9-477d-9ead-67625997e3a6' class="glyphicon glyphicon-menu-down"></span></div>
-	</td>
-	</tr>
-<tr>
-	<td class="time">1694216831999</td>
-	<td class="methodTest">
-		<span class="description"><b>Method: </b>userDataShouldContainId</span><br>
-			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,001s</span><br>
-	</td>
-	<td class="result">
-		 									<div class="stackTrace" id="854bbe41-18b9-477d-9ead-67625997e3a6" style="display: block;">
-						<a href="javascript:toggleElement('exception-854bbe41-18b9-477d-9ead-67625997e3a6','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
-		<div class="stackTrace" id="exception-854bbe41-18b9-477d-9ead-67625997e3a6">
-					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
-					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-					io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-					io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-					io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-					io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-					org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-					org.testng.TestRunner.run(TestRunner.java:621)<br/>
-					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-					org.testng.TestNG.run(TestNG.java:1082)<br/>
-					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-854bbe41-18b9-477d-9ead-67625997e3a6','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
-			<div class="stackTrace" id="causedBy-854bbe41-18b9-477d-9ead-67625997e3a6">
-							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
-							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
-							com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br/>
-							com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br/>
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br/>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-							org.testng.TestRunner.run(TestRunner.java:621)<br/>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-							org.testng.TestNG.run(TestNG.java:1082)<br/>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-						</div>
-				</div>
-		</td>
-	</div>
-</tr>
-					<tr>
-	<td class="time">1694216831998</td>
-	<td class="header skipped" colspan="4" onClick="toggleElement('3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc','block');changeSingleIcon('span-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc' class="glyphicon glyphicon-menu-down"></span></div>
-	</td>
-	</tr>
-<tr>
-	<td class="time">1694216831998</td>
-	<td class="methodTest">
-		<span class="description"><b>Method: </b>shouldUpdateExistingUserWithNewData</span><br>
-			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,000s</span><br>
-	</td>
-	<td class="result">
-		 									<div class="stackTrace" id="3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc" style="display: block;">
-						<a href="javascript:toggleElement('exception-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
-		<div class="stackTrace" id="exception-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc">
-					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
-					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-					io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-					io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-					io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-					io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-					org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-					org.testng.TestRunner.run(TestRunner.java:621)<br/>
-					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-					org.testng.TestNG.run(TestNG.java:1082)<br/>
-					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
-			<div class="stackTrace" id="causedBy-3e3ac707-fbce-4cdc-b9a8-4d9f9fbe6fbc">
-							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
-							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
-							com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br/>
-							com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br/>
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br/>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-							org.testng.TestRunner.run(TestRunner.java:621)<br/>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-							org.testng.TestNG.run(TestNG.java:1082)<br/>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-						</div>
-				</div>
-		</td>
-	</div>
-</tr>
-					<tr>
-	<td class="time">1694216831996</td>
-	<td class="header skipped" colspan="4" onClick="toggleElement('e4a844be-a949-43fe-adfa-cdc4e6777a19','block');changeSingleIcon('span-e4a844be-a949-43fe-adfa-cdc4e6777a19');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
-	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-e4a844be-a949-43fe-adfa-cdc4e6777a19' class="glyphicon glyphicon-menu-down"></span></div>
-	</td>
-	</tr>
-<tr>
-	<td class="time">1694216831996</td>
-	<td class="methodTest">
-		<span class="description"><b>Method: </b>shouldDeleteUserUsingId</span><br>
-			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,000s</span><br>
-	</td>
-	<td class="result">
-		 									<div class="stackTrace" id="e4a844be-a949-43fe-adfa-cdc4e6777a19" style="display: block;">
-						<a href="javascript:toggleElement('exception-e4a844be-a949-43fe-adfa-cdc4e6777a19','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
-		<div class="stackTrace" id="exception-e4a844be-a949-43fe-adfa-cdc4e6777a19">
-					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
-					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-					io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-					io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-					io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-					io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-					io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-					org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-					org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-					org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-					org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-					org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-					org.testng.TestRunner.run(TestRunner.java:621)<br/>
-					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-					org.testng.TestNG.run(TestNG.java:1082)<br/>
-					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-					org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-e4a844be-a949-43fe-adfa-cdc4e6777a19','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
-			<div class="stackTrace" id="causedBy-e4a844be-a949-43fe-adfa-cdc4e6777a19">
-							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
-							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
-							com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)<br/>
-							com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)<br/>
-							com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)<br/>
-							com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)<br/>
-							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)<br/>
-							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)<br/>
-							io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br/>
-							io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)<br/>
-							io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)<br/>
-							io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)<br/>
-							io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)<br/>
-							org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br/>
-							org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
-							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
-							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
-							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
-							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
-							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)<br/>
-							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)<br/>
-							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
-							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
-							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
-							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
-							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
-							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
-							org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
-							org.testng.TestRunner.run(TestRunner.java:621)<br/>
-							org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
-							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
-							org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
-							org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
-							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
-							org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
-							org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
-							org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
-							org.testng.TestNG.run(TestNG.java:1082)<br/>
-							org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)<br/>
-							org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)<br/>
-							org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br/>
-							org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
-						</div>
-				</div>
-		</td>
-	</div>
-</tr>
-						
+				
 												<tr>
-			<td class="time">1694216832002</td>
-			<td class="header passed" colspan="4" onClick="toggleElement('c97a80ff-99dd-45cb-a728-5a3b8c6a73a9','block');changeSingleIcon('span-c97a80ff-99dd-45cb-a728-5a3b8c6a73a9');" title="Click to expand/collapse" style="cursor: pointer;">
-			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.verification.ConfigurationVerificationTest</div>
-			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-c97a80ff-99dd-45cb-a728-5a3b8c6a73a9' class="glyphicon glyphicon-menu-down"></span></div>
+			<td class="time">1694217781629</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b4d50d68-2a77-42d4-a82a-beba048ac2cc','block');changeSingleIcon('span-b4d50d68-2a77-42d4-a82a-beba048ac2cc');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-b4d50d68-2a77-42d4-a82a-beba048ac2cc' class="glyphicon glyphicon-menu-down"></span></div>
 			</td>
 			</tr>
 			<tr>
-	<td class="time">1694216832002</td>
+	<td class="time">1694217781629</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>userDataShouldContainId</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0,343s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="b4d50d68-2a77-42d4-a82a-beba048ac2cc" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1694217779307</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('a61ad3b9-ff7b-4d0c-8f52-f775ff4a089e','block');changeSingleIcon('span-a61ad3b9-ff7b-4d0c-8f52-f775ff4a089e');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-a61ad3b9-ff7b-4d0c-8f52-f775ff4a089e' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1694217779307</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldFetchAllUsersFromDefaultPageBodyExtract</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0,875s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="a61ad3b9-ff7b-4d0c-8f52-f775ff4a089e" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1694217776252</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('42d84747-4b58-4b05-9cd9-680c409d7662','block');changeSingleIcon('span-42d84747-4b58-4b05-9cd9-680c409d7662');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-42d84747-4b58-4b05-9cd9-680c409d7662' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1694217776252</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldCreateAUserAndReturnAnId</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0,766s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="42d84747-4b58-4b05-9cd9-680c409d7662" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1694217780942</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('97eb20b2-5e83-4201-9bc5-fbfca37e8dc7','block');changeSingleIcon('span-97eb20b2-5e83-4201-9bc5-fbfca37e8dc7');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-97eb20b2-5e83-4201-9bc5-fbfca37e8dc7' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1694217780942</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldUpdateExistingUserWithNewData</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0,339s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="97eb20b2-5e83-4201-9bc5-fbfca37e8dc7" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1694217777770</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('54b71a20-9a3e-4ca4-aaa8-6b97a9dd2847','block');changeSingleIcon('span-54b71a20-9a3e-4ca4-aaa8-6b97a9dd2847');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-54b71a20-9a3e-4ca4-aaa8-6b97a9dd2847' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1694217777770</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldDeleteUserUsingId</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0,764s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="54b71a20-9a3e-4ca4-aaa8-6b97a9dd2847" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1694217781974</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('436021bc-80ae-4c8f-bf4a-4448691cd834','block');changeSingleIcon('span-436021bc-80ae-4c8f-bf4a-4448691cd834');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.verification.ConfigurationVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-436021bc-80ae-4c8f-bf4a-4448691cd834' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1694217781974</td>
 	<td class="methodTest">
 		<span class="description"><b>Method: </b>shouldLogRequestAndResponseData</span><br>
 			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>0,780s</span><br>
+							<span class="duration"><b>Duration: </b>0,361s</span><br>
 	</td>
 	<td class="result">
-						<div class="stackTrace" id="c97a80ff-99dd-45cb-a728-5a3b8c6a73a9" style="display: block;">
+						<div class="stackTrace" id="436021bc-80ae-4c8f-bf4a-4448691cd834" style="display: block;">
 					</td>
 	</div>
 </tr>

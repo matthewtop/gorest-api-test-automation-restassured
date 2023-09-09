@@ -8,11 +8,11 @@ public class UserApiTestDataGenerator {
 
     protected static Logger logger = LoggerFactory.getLogger(UserApiTestDataGenerator.class);
     public static CreateUserRequestDTO getRandomUser() {
-        return new CreateUserRequestDTO(getRandomEmail(), "Ivan Paulouski", "male", "active" );
+        return new CreateUserRequestDTO(getRandomEmail(), "Mateusz Tolpa", "male", "active" );
     }
 
     private static String getRandomEmail() {
-        String email = "ivan.email" + (int) (Math.random() * 67237464) + "@hotmail.com";
+        String email = "mateusz.email" + (int) (Math.random() * 67237464) + "@hotmail.com";
         logger.info("Generated email: {}", email);
         return email;
     }

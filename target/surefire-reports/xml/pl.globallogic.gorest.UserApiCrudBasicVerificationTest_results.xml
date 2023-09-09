@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Surefire test"
-           tests="9"
+           tests="5"
            failures="0"
            errors="0"
-           skipped="9"
-           time="2,059">
+           skipped="0"
+           time="3,087">
   <properties />
   
-            <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="testSetUp" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="shouldDeleteUserUsingId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="shouldUpdateExistingUserWithNewData" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="userDataShouldContainId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="shouldFetchAllUsersFromDefaultPageBodyExtract" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
-            <testcase name="shouldCreateAUserAndReturnAnId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="shouldDeleteUserUsingId" time="0,764" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
+                <testcase name="shouldUpdateExistingUserWithNewData" time="0,339" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
+                <testcase name="shouldCreateAUserAndReturnAnId" time="0,766" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
+                <testcase name="shouldFetchAllUsersFromDefaultPageBodyExtract" time="0,875" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
+                <testcase name="userDataShouldContainId" time="0,343" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" />
+      
 </testsuite>
