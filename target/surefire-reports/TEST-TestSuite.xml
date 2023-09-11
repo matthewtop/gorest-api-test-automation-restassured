@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="9.39" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="8.529" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Users\mateu\.jdks\openjdk-20.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\mateu\AppData\Local\Temp\surefire1524292352570820310\surefirebooter-20230909020252881_3.jar C:\Users\mateu\AppData\Local\Temp\surefire1524292352570820310 2023-09-09T02-02-52_751-jvmRun1 surefire-20230909020252881_1tmp surefire_0-20230909020252881_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mateu\AppData\Local\Temp\surefire3094508062327784233\surefirebooter-20230911150713105_3.jar C:\Users\mateu\AppData\Local\Temp\surefire3094508062327784233 2023-09-11T15-07-12_894-jvmRun1 surefire-20230911150713105_1tmp surefire_0-20230911150713105_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\dev\javaPractice\gorest-api-test-automation-restassured\target\test-classes;D:\dev\javaPractice\gorest-api-test-automation-restassured\target\classes;C:\Users\mateu\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\mateu\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\mateu\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\mateu\.m2\repository\com\github\sdrss\reportng\2.7.0\reportng-2.7.0.jar;C:\Users\mateu\.m2\repository\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\mateu\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\mateu\.m2\repository\commons-lang\commons-lang\2.1\commons-lang-2.1.jar;C:\Users\mateu\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\mateu\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\mateu\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2.jar;C:\Users\mateu\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\mateu\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\mateu\.m2\repository\com\google\guava\guava\25.1-android\guava-25.1-android.jar;C:\Users\mateu\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\mateu\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\mateu\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\mateu\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\mateu\.m2\repository\org\testng\reportng\1.2.2\reportng-1.2.2.jar;C:\Users\mateu\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;C:\Users\mateu\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\mateu\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mateu\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\mateu\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\mateu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mateu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\mateu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\mateu\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\mateu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\mateu\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\mateu\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\mateu\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\mateu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\mateu\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\mateu\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\mateu\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\mateu\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\mateu\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\mateu\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\mateu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mateu\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\mateu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="testng.Failed" value="0"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mateu\AppData\Local\Temp\surefire1524292352570820310\surefirebooter-20230909020252881_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mateu\AppData\Local\Temp\surefire3094508062327784233\surefirebooter-20230911150713105_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9-78"/>
@@ -66,37 +66,37 @@
     <property name="testng.Passed" value="12"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="shouldCreateAUserAndReturnAnId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.767">
-    <system-out><![CDATA[02:02:54.227 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email36744885@hotmail.com
-02:02:56.251 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5132150
-02:02:56.253 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email25617659@hotmail.com
-02:02:57.012 [main] INFO  p.globallogic.gorest.BaseUserApiTest - User object : OurUser{id=5132151, name='Mateusz Tolpa', email='mateusz.email25617659@hotmail.com', gender='male', status='active'}
+  <testcase name="shouldCreateAUserAndReturnAnId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.408">
+    <system-out><![CDATA[15:07:14.982 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email41382819@hotmail.com
+15:07:17.175 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5140129
+15:07:17.177 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email30096912@hotmail.com
+15:07:17.567 [main] INFO  p.globallogic.gorest.BaseUserApiTest - User object : OurUser{id=5140130, name='Mateusz Tolpa', email='mateusz.email30096912@hotmail.com', gender='male', status='active'}
 ]]></system-out>
   </testcase>
-  <testcase name="shouldDeleteUserUsingId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.764">
-    <system-out><![CDATA[02:02:57.020 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email30016658@hotmail.com
-02:02:57.770 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5132152
+  <testcase name="shouldDeleteUserUsingId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.756">
+    <system-out><![CDATA[15:07:17.585 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email25063430@hotmail.com
+15:07:17.925 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5140131
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFetchAllUsersFromDefaultPageBodyExtract" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.876">
-    <system-out><![CDATA[02:02:58.535 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email64455712@hotmail.com
-02:02:59.306 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5132153
-02:03:00.182 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Users : [OurUser{id=5132153, name='Mateusz Tolpa', email='mateusz.email64455712@hotmail.com', gender='male', status='active'}, OurUser{id=5132151, name='Mateusz Tolpa', email='mateusz.email25617659@hotmail.com', gender='male', status='active'}, OurUser{id=5132150, name='Mateusz Tolpa', email='mateusz.email36744885@hotmail.com', gender='male', status='active'}, OurUser{id=5132148, name='Ivan Paulouski', email='ivan.email12929070@hotmail.com', gender='male', status='active'}, OurUser{id=5132147, name='Ivan Paulouski', email='ivan.email53506470@hotmail.com', gender='male', status='active'}, OurUser{id=5132146, name='Ivan Paulouski', email='ivan.email49708044@hotmail.com', gender='male', status='active'}, OurUser{id=5132144, name='Ivan Paulouski', email='ivan.email25115002@hotmail.com', gender='male', status='active'}, OurUser{id=5132143, name='Ivan Paulouski', email='ivan.email33865912@hotmail.com', gender='male', status='active'}, OurUser{id=5132142, name='Ivan Paulouski', email='ivan.email64780373@hotmail.com', gender='male', status='active'}, OurUser{id=5132141, name='Ivan Paulouski', email='ivan.email22202620@hotmail.com', gender='male', status='active'}]
+  <testcase name="shouldFetchAllUsersFromDefaultPageBodyExtract" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.884">
+    <system-out><![CDATA[15:07:18.681 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email21270390@hotmail.com
+15:07:19.027 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5140132
+15:07:19.911 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Users : [OurUser{id=5140132, name='Mateusz Tolpa', email='mateusz.email21270390@hotmail.com', gender='male', status='active'}, OurUser{id=5140130, name='Mateusz Tolpa', email='mateusz.email30096912@hotmail.com', gender='male', status='active'}, OurUser{id=5140129, name='Mateusz Tolpa', email='mateusz.email41382819@hotmail.com', gender='male', status='active'}, OurUser{id=5137597, name='Ivan Paulouski', email='ivan.email57960372@hotmail.com', gender='male', status='active'}, OurUser{id=5137594, name='Ivan Paulouski', email='ivan.email29257263@hotmail.com', gender='male', status='active'}, OurUser{id=5133802, name='Mateusz Tolpa', email='mateusz.email13571877@hotmail.com', gender='male', status='active'}, OurUser{id=5133801, name='Mateusz Tolpa', email='mateusz.email54211991@hotmail.com', gender='male', status='active'}, OurUser{id=5133800, name='Mateusz Tolpa', email='mateusz.email4082686@hotmail.com', gender='male', status='active'}, OurUser{id=5133798, name='Mateusz Tolpa', email='mateusz.email21027437@hotmail.com', gender='male', status='active'}, OurUser{id=5133797, name='Mateusz Tolpa', email='mateusz.email19524496@hotmail.com', gender='male', status='active'}]
 ]]></system-out>
   </testcase>
-  <testcase name="shouldUpdateExistingUserWithNewData" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.34">
-    <system-out><![CDATA[02:03:00.183 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email39737251@hotmail.com
-02:03:00.941 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5132154
-02:03:00.942 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email32997398@hotmail.com
+  <testcase name="shouldUpdateExistingUserWithNewData" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.336">
+    <system-out><![CDATA[15:07:19.912 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email48104032@hotmail.com
+15:07:20.661 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5140134
+15:07:20.662 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email29232483@hotmail.com
 ]]></system-out>
   </testcase>
-  <testcase name="userDataShouldContainId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.342">
-    <system-out><![CDATA[02:03:01.282 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email65674281@hotmail.com
-02:03:01.629 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5132155
+  <testcase name="userDataShouldContainId" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" time="0.314">
+    <system-out><![CDATA[15:07:20.999 [main] INFO  p.g.g.t.UserApiTestDataGenerator - Generated email: mateusz.email5299170@hotmail.com
+15:07:21.335 [main] INFO  p.globallogic.gorest.BaseUserApiTest - Created user id: 5140135
 ]]></system-out>
   </testcase>
-  <testcase name="shouldLogRequestAndResponseData" classname="pl.globallogic.verification.ConfigurationVerificationTest" time="0.361">
-    <system-out><![CDATA[02:03:01.974 [main] INFO  p.g.v.ConfigurationVerificationTest - Verify test automation framework configuration test
+  <testcase name="shouldLogRequestAndResponseData" classname="pl.globallogic.verification.ConfigurationVerificationTest" time="0.38">
+    <system-out><![CDATA[15:07:21.652 [main] INFO  p.g.v.ConfigurationVerificationTest - Verify test automation framework configuration test
 ]]></system-out>
   </testcase>
 </testsuite>

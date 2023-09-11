@@ -1,4 +1,4 @@
-package pl.globallogic.verification;
+package pl.globallogic.gorest.user.schemavalidation;
 
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;

@@ -2,58 +2,58 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-09T02:02:53 CEST" name="Surefire suite" finished-at="2023-09-09T02:03:02 CEST" duration-ms="8583">
+  <suite started-at="2023-09-11T15:07:14 CEST" name="Surefire suite" finished-at="2023-09-11T15:07:22 CEST" duration-ms="7578">
     <groups>
     </groups>
-    <test started-at="2023-09-09T02:02:53 CEST" name="Surefire test" finished-at="2023-09-09T02:03:02 CEST" duration-ms="8583">
+    <test started-at="2023-09-11T15:07:14 CEST" name="Surefire test" finished-at="2023-09-11T15:07:22 CEST" duration-ms="7578">
       <class name="pl.globallogic.verification.ConfigurationVerificationTest">
-        <test-method signature="shouldLogRequestAndResponseData()[pri:0, instance:pl.globallogic.verification.ConfigurationVerificationTest@3cce57c7]" started-at="2023-09-09T02:03:01 CEST" name="shouldLogRequestAndResponseData" finished-at="2023-09-09T02:03:02 CEST" duration-ms="361" status="PASS">
+        <test-method signature="shouldLogRequestAndResponseData()[pri:0, instance:pl.globallogic.verification.ConfigurationVerificationTest@3cce57c7]" started-at="2023-09-11T15:07:21 CEST" name="shouldLogRequestAndResponseData" finished-at="2023-09-11T15:07:22 CEST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldLogRequestAndResponseData -->
       </class> <!-- pl.globallogic.verification.ConfigurationVerificationTest -->
       <class name="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:53 CEST" name="globalSetUp" finished-at="2023-09-09T02:02:54 CEST" duration-ms="442" status="PASS">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:14 CEST" name="globalSetUp" finished-at="2023-09-11T15:07:14 CEST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUp -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:54 CEST" name="testSetUp" finished-at="2023-09-09T02:02:56 CEST" duration-ms="2033" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:14 CEST" name="testSetUp" finished-at="2023-09-11T15:07:17 CEST" duration-ms="2195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldCreateAUserAndReturnAnId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:56 CEST" name="shouldCreateAUserAndReturnAnId" finished-at="2023-09-09T02:02:57 CEST" duration-ms="766" status="PASS">
+        <test-method signature="shouldCreateAUserAndReturnAnId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="shouldCreateAUserAndReturnAnId" finished-at="2023-09-11T15:07:17 CEST" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldCreateAUserAndReturnAnId -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:57 CEST" name="testSetUp" finished-at="2023-09-09T02:02:57 CEST" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="testSetUp" finished-at="2023-09-11T15:07:17 CEST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldDeleteUserUsingId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:57 CEST" name="shouldDeleteUserUsingId" finished-at="2023-09-09T02:02:58 CEST" duration-ms="764" status="PASS">
+        <test-method signature="shouldDeleteUserUsingId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="shouldDeleteUserUsingId" finished-at="2023-09-11T15:07:18 CEST" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldDeleteUserUsingId -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:58 CEST" name="testSetUp" finished-at="2023-09-09T02:02:59 CEST" duration-ms="772" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:18 CEST" name="testSetUp" finished-at="2023-09-11T15:07:19 CEST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldFetchAllUsersFromDefaultPageBodyExtract()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:02:59 CEST" name="shouldFetchAllUsersFromDefaultPageBodyExtract" finished-at="2023-09-09T02:03:00 CEST" duration-ms="875" status="PASS">
+        <test-method signature="shouldFetchAllUsersFromDefaultPageBodyExtract()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:19 CEST" name="shouldFetchAllUsersFromDefaultPageBodyExtract" finished-at="2023-09-11T15:07:19 CEST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldFetchAllUsersFromDefaultPageBodyExtract -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:03:00 CEST" name="testSetUp" finished-at="2023-09-09T02:03:00 CEST" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:19 CEST" name="testSetUp" finished-at="2023-09-11T15:07:20 CEST" duration-ms="751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldUpdateExistingUserWithNewData()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:03:00 CEST" name="shouldUpdateExistingUserWithNewData" finished-at="2023-09-09T02:03:01 CEST" duration-ms="339" status="PASS">
+        <test-method signature="shouldUpdateExistingUserWithNewData()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:20 CEST" name="shouldUpdateExistingUserWithNewData" finished-at="2023-09-11T15:07:20 CEST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldUpdateExistingUserWithNewData -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:03:01 CEST" name="testSetUp" finished-at="2023-09-09T02:03:01 CEST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:20 CEST" name="testSetUp" finished-at="2023-09-11T15:07:21 CEST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="userDataShouldContainId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-09T02:03:01 CEST" name="userDataShouldContainId" finished-at="2023-09-09T02:03:01 CEST" duration-ms="343" status="PASS">
+        <test-method signature="userDataShouldContainId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:21 CEST" name="userDataShouldContainId" finished-at="2023-09-11T15:07:21 CEST" duration-ms="315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userDataShouldContainId -->

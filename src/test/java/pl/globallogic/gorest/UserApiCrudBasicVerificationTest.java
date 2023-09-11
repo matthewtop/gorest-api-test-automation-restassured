@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pl.globallogic.gorest.dto.CreateUserRequestDTO;
 import pl.globallogic.gorest.model.OurUser;
-import pl.globallogic.gorest.testdata.UserApiTestDataGenerator;
+import pl.globallogic.gorest.user.testdata.UserApiTestDataGenerator;
 
 import java.util.List;
 

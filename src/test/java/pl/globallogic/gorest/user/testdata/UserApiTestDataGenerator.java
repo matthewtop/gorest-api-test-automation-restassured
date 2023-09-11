@@ -1,4 +1,4 @@
-package pl.globallogic.gorest.testdata;
+package pl.globallogic.gorest.user.testdata;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
