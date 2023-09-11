@@ -1,63 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-11T15:07:14 CEST" name="Surefire suite" finished-at="2023-09-11T15:07:22 CEST" duration-ms="7578">
+  <suite started-at="2023-09-11T18:12:08 CEST" name="Surefire suite" finished-at="2023-09-11T18:12:15 CEST" duration-ms="6267">
     <groups>
+      <group name="fetch">
+        <method signature="UserApiCrudBasicVerificationTest.shouldFetchAllUsersFromDefaultPageBodyExtract()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" name="shouldFetchAllUsersFromDefaultPageBodyExtract" class="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest"/>
+      </group> <!-- fetch -->
+      <group name="update">
+        <method signature="UserApiCrudBasicVerificationTest.shouldCreateAUserAndReturnAnId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" name="shouldCreateAUserAndReturnAnId" class="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest"/>
+        <method signature="UserApiCrudBasicVerificationTest.userDataShouldContainId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" name="userDataShouldContainId" class="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest"/>
+      </group> <!-- update -->
+      <group name="delete">
+        <method signature="UserApiCrudBasicVerificationTest.shouldDeleteUserUsingId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" name="shouldDeleteUserUsingId" class="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest"/>
+      </group> <!-- delete -->
     </groups>
-    <test started-at="2023-09-11T15:07:14 CEST" name="Surefire test" finished-at="2023-09-11T15:07:22 CEST" duration-ms="7578">
+    <test started-at="2023-09-11T18:12:08 CEST" name="Surefire test" finished-at="2023-09-11T18:12:15 CEST" duration-ms="6267">
+      <class name="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:11 CEST" name="globalSetUp" finished-at="2023-09-11T18:12:11 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetUp -->
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:11 CEST" name="testSetUp" finished-at="2023-09-11T18:12:11 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldCreateAUserAndReturnAnId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:11 CEST" name="testSetUp" finished-at="2023-09-11T18:12:11 CEST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="shouldCreateAUserAndReturnAnId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:11 CEST" name="shouldCreateAUserAndReturnAnId" finished-at="2023-09-11T18:12:11 CEST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateAUserAndReturnAnId -->
+        <test-method is-config="true" signature="testCleanUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:11 CEST" name="testCleanUp" finished-at="2023-09-11T18:12:12 CEST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCleanUp -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="testTearDown" finished-at="2023-09-11T18:12:12 CEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldCreateAUserAndReturnAnId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="testSetUp" finished-at="2023-09-11T18:12:12 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldDeleteUserUsingId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="testSetUp" finished-at="2023-09-11T18:12:12 CEST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="shouldDeleteUserUsingId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="shouldDeleteUserUsingId" finished-at="2023-09-11T18:12:12 CEST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteUserUsingId -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="testTearDown" finished-at="2023-09-11T18:12:12 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldDeleteUserUsingId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method signature="shouldFetchAllUsersFromDefaultPageBodyExtract()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="shouldFetchAllUsersFromDefaultPageBodyExtract" finished-at="2023-09-11T18:12:13 CEST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFetchAllUsersFromDefaultPageBodyExtract -->
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:12 CEST" name="testSetUp" finished-at="2023-09-11T18:12:12 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldFetchAllUsersFromDefaultPageBodyExtract()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="testTearDown" finished-at="2023-09-11T18:12:13 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldFetchAllUsersFromDefaultPageBodyExtract()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="testSetUp" finished-at="2023-09-11T18:12:13 CEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWithNewData()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="shouldUpdateExistingUserWithNewData()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="shouldUpdateExistingUserWithNewData" finished-at="2023-09-11T18:12:13 CEST" duration-ms="312" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: "gender", "status", "id", "email", "name"])
+ at [Source: (String)"{"message":"Resource not found"}"; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser["message"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: "gender", "status", "id", "email", "name"])
+ at [Source: (String)"{"message":"Resource not found"}"; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser["message"])
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at pl.globallogic.gorest.apis.UserAPI.updateUserInfo(UserAPI.java:61)
+at pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWithNewData(UserApiCrudBasicVerificationTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: "gender", "status", "id", "email", "name"])
+ at [Source: (String)"{"message":"Resource not found"}"; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser["message"])
+at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldUpdateExistingUserWithNewData -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="testTearDown" finished-at="2023-09-11T18:12:13 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWithNewData()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="testSetUp" finished-at="2023-09-11T18:12:14 CEST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:13 CEST" name="testSetUp" finished-at="2023-09-11T18:12:13 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.userDataShouldContainId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="userDataShouldContainId()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:14 CEST" name="userDataShouldContainId" finished-at="2023-09-11T18:12:14 CEST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userDataShouldContainId -->
+        <test-method is-config="true" signature="testCleanUp()[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:14 CEST" name="testCleanUp" finished-at="2023-09-11T18:12:14 CEST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCleanUp -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest@7fae4d4a]" started-at="2023-09-11T18:12:14 CEST" name="testTearDown" finished-at="2023-09-11T18:12:14 CEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.userDataShouldContainId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest -->
       <class name="pl.globallogic.verification.ConfigurationVerificationTest">
-        <test-method signature="shouldLogRequestAndResponseData()[pri:0, instance:pl.globallogic.verification.ConfigurationVerificationTest@3cce57c7]" started-at="2023-09-11T15:07:21 CEST" name="shouldLogRequestAndResponseData" finished-at="2023-09-11T15:07:22 CEST" duration-ms="378" status="PASS">
+        <test-method signature="shouldLogRequestAndResponseData()[pri:0, instance:pl.globallogic.verification.ConfigurationVerificationTest@3f4f9acd]" started-at="2023-09-11T18:12:14 CEST" name="shouldLogRequestAndResponseData" finished-at="2023-09-11T18:12:15 CEST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldLogRequestAndResponseData -->
       </class> <!-- pl.globallogic.verification.ConfigurationVerificationTest -->
-      <class name="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
-        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:14 CEST" name="globalSetUp" finished-at="2023-09-11T15:07:14 CEST" duration-ms="498" status="PASS">
+      <class name="pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest@38f2e97e]" started-at="2023-09-11T18:12:08 CEST" name="globalSetUp" finished-at="2023-09-11T18:12:08 CEST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUp -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:14 CEST" name="testSetUp" finished-at="2023-09-11T15:07:17 CEST" duration-ms="2195" status="PASS">
+        <test-method is-config="true" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest@38f2e97e]" started-at="2023-09-11T18:12:08 CEST" name="testSetUp" finished-at="2023-09-11T18:12:08 CEST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest.responseShouldBeValidAgainstSchema()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldCreateAUserAndReturnAnId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="shouldCreateAUserAndReturnAnId" finished-at="2023-09-11T15:07:17 CEST" duration-ms="407" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldCreateAUserAndReturnAnId -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="testSetUp" finished-at="2023-09-11T15:07:17 CEST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest@38f2e97e]" started-at="2023-09-11T18:12:08 CEST" name="testSetUp" finished-at="2023-09-11T18:12:10 CEST" duration-ms="1461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="shouldDeleteUserUsingId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:17 CEST" name="shouldDeleteUserUsingId" finished-at="2023-09-11T15:07:18 CEST" duration-ms="755" status="PASS">
+        <test-method signature="responseShouldBeValidAgainstSchema()[pri:0, instance:pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest@38f2e97e]" started-at="2023-09-11T18:12:10 CEST" name="responseShouldBeValidAgainstSchema" finished-at="2023-09-11T18:12:11 CEST" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldDeleteUserUsingId -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:18 CEST" name="testSetUp" finished-at="2023-09-11T15:07:19 CEST" duration-ms="346" status="PASS">
+        </test-method> <!-- responseShouldBeValidAgainstSchema -->
+        <test-method is-config="true" signature="testTearDown(java.lang.reflect.Method)[pri:0, instance:pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest@38f2e97e]" started-at="2023-09-11T18:12:11 CEST" name="testTearDown" finished-at="2023-09-11T18:12:11 CEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest.responseShouldBeValidAgainstSchema()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="shouldFetchAllUsersFromDefaultPageBodyExtract()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:19 CEST" name="shouldFetchAllUsersFromDefaultPageBodyExtract" finished-at="2023-09-11T15:07:19 CEST" duration-ms="883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldFetchAllUsersFromDefaultPageBodyExtract -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:19 CEST" name="testSetUp" finished-at="2023-09-11T15:07:20 CEST" duration-ms="751" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="shouldUpdateExistingUserWithNewData()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:20 CEST" name="shouldUpdateExistingUserWithNewData" finished-at="2023-09-11T15:07:20 CEST" duration-ms="336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldUpdateExistingUserWithNewData -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:20 CEST" name="testSetUp" finished-at="2023-09-11T15:07:21 CEST" duration-ms="336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="userDataShouldContainId()[pri:0, instance:pl.globallogic.gorest.UserApiCrudBasicVerificationTest@4ef74c30]" started-at="2023-09-11T15:07:21 CEST" name="userDataShouldContainId" finished-at="2023-09-11T15:07:21 CEST" duration-ms="315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userDataShouldContainId -->
-      </class> <!-- pl.globallogic.gorest.UserApiCrudBasicVerificationTest -->
+        </test-method> <!-- testTearDown -->
+      </class> <!-- pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldUpdateExistingUserWithNewData">shouldUpdateExistingUserWithNewData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldCreateAUserAndReturnAnId">shouldCreateAUserAndReturnAnId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest" class="method navigator-link" hash-for-method="responseShouldBeValidAgainstSchema">responseShouldBeValidAgainstSchema</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldDeleteUserUsingId">shouldDeleteUserUsingId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldCreateAUserAndReturnAnId">shouldCreateAUserAndReturnAnId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldFetchAllUsersFromDefaultPageBodyExtract">shouldFetchAllUsersFromDefaultPageBodyExtract</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldDeleteUserUsingId">shouldDeleteUserUsingId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldFetchAllUsersFromDefaultPageBodyExtract">shouldFetchAllUsersFromDefaultPageBodyExtract</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,12 +142,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="shouldUpdateExistingUserWithNewData">shouldUpdateExistingUserWithNewData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="userDataShouldContainId">userDataShouldContainId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest" class="method navigator-link" hash-for-method="userDataShouldContainId">userDataShouldContainId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -143,10 +157,71 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldUpdateExistingUserWithNewData">
+                  </a> <!-- shouldUpdateExistingUserWithNewData -->
+                  <span class="method-name">shouldUpdateExistingUserWithNewData</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Resource not found&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at pl.globallogic.gorest.apis.UserAPI.updateUserInfo(UserAPI.java:61)
+	at pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWithNewData(UserApiCrudBasicVerificationTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Resource not found&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 42 more
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span>
+              <span class="class-name">pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="responseShouldBeValidAgainstSchema">
+                  </a> <!-- responseShouldBeValidAgainstSchema -->
+                  <span class="method-name">responseShouldBeValidAgainstSchema</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -168,13 +243,6 @@
                   <a name="shouldFetchAllUsersFromDefaultPageBodyExtract">
                   </a> <!-- shouldFetchAllUsersFromDefaultPageBodyExtract -->
                   <span class="method-name">shouldFetchAllUsersFromDefaultPageBodyExtract</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldUpdateExistingUserWithNewData">
-                  </a> <!-- shouldUpdateExistingUserWithNewData -->
-                  <span class="method-name">shouldUpdateExistingUserWithNewData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -212,10 +280,10 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pl.globallogic.gorest.BaseUserApiTest&quot;/&gt;
-      &lt;class name=&quot;pl.globallogic.gorest.UserApiCrudBasicVerificationTest&quot;/&gt;
+      &lt;class name=&quot;pl.globallogic.gorest.user.BaseUserApiTest&quot;/&gt;
+      &lt;class name=&quot;pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest&quot;/&gt;
+      &lt;class name=&quot;pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest&quot;/&gt;
       &lt;class name=&quot;pl.globallogic.verification.ConfigurationVerificationTest&quot;/&gt;
-      &lt;class name=&quot;pl.globallogic.verification.JsonSchemaValidationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -239,6 +307,34 @@
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">delete</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">shouldDeleteUserUsingId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">fetch</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">shouldFetchAllUsersFromDefaultPageBodyExtract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">update</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">shouldCreateAUserAndReturnAnId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">userDataShouldContainId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -255,36 +351,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'shouldFetchAllUsersFromDefaultPageBodyExtract')
-data.setCell(0, 2, 'pl.globallogic.gorest.UserApiCrudBasicVerificationTest')
-data.setCell(0, 3, 883);
+data.setCell(0, 1, 'responseShouldBeValidAgainstSchema')
+data.setCell(0, 2, 'pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest')
+data.setCell(0, 3, 805);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'shouldDeleteUserUsingId')
-data.setCell(1, 2, 'pl.globallogic.gorest.UserApiCrudBasicVerificationTest')
-data.setCell(1, 3, 755);
+data.setCell(1, 1, 'shouldFetchAllUsersFromDefaultPageBodyExtract')
+data.setCell(1, 2, 'pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest')
+data.setCell(1, 3, 463);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'shouldCreateAUserAndReturnAnId')
-data.setCell(2, 2, 'pl.globallogic.gorest.UserApiCrudBasicVerificationTest')
-data.setCell(2, 3, 407);
+data.setCell(2, 2, 'pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest')
+data.setCell(2, 3, 355);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldLogRequestAndResponseData')
-data.setCell(3, 2, 'pl.globallogic.verification.ConfigurationVerificationTest')
-data.setCell(3, 3, 378);
+data.setCell(3, 1, 'shouldDeleteUserUsingId')
+data.setCell(3, 2, 'pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest')
+data.setCell(3, 3, 352);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'shouldUpdateExistingUserWithNewData')
-data.setCell(4, 2, 'pl.globallogic.gorest.UserApiCrudBasicVerificationTest')
-data.setCell(4, 3, 336);
+data.setCell(4, 1, 'userDataShouldContainId')
+data.setCell(4, 2, 'pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest')
+data.setCell(4, 3, 344);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'userDataShouldContainId')
-data.setCell(5, 2, 'pl.globallogic.gorest.UserApiCrudBasicVerificationTest')
-data.setCell(5, 3, 315);
+data.setCell(5, 1, 'shouldLogRequestAndResponseData')
+data.setCell(5, 2, 'pl.globallogic.verification.ConfigurationVerificationTest')
+data.setCell(5, 3, 342);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldUpdateExistingUserWithNewData')
+data.setCell(6, 2, 'pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest')
+data.setCell(6, 3, 312);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -299,16 +399,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">pl.globallogic.verification.JsonSchemaValidationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">responseShouldBeValidAgainstSchema</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -317,57 +410,122 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">globalSetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest.responseShouldBeVal...)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">506 ms</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">responseShouldBeValidAgainstSchema</span>
+                <span class="method-start">1497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest.responseShouldBeVal...)</span>
+                <span class="method-start">2303 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">globalSetUp</span>
+                <span class="method-start">2305 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldCreateAUserAndReturnAn...)</span>
+                <span class="method-start">2308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">2308 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldCreateAUserAndReturnAnId</span>
-                <span class="method-start">2701 ms</span>
+                <span class="method-start">2690 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testCleanUp</span>
+                <span class="method-start">3046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldCreateAUserAndReturnAn...)</span>
+                <span class="method-start">3377 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldDeleteUserUsingId())</span>
+                <span class="method-start">3382 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">3110 ms</span>
+                <span class="method-start">3382 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldDeleteUserUsingId</span>
-                <span class="method-start">3451 ms</span>
+                <span class="method-start">3726 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">4207 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldDeleteUserUsingId())</span>
+                <span class="method-start">4079 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">shouldFetchAllUsersFromDefaultPageBodyExtract</span>
-                <span class="method-start">4554 ms</span>
+                <span class="method-start">4080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">5437 ms</span>
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldFetchAllUsersFromDefau...)</span>
+                <span class="method-start">4080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldFetchAllUsersFromDefau...)</span>
+                <span class="method-start">4544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWith...)</span>
+                <span class="method-start">4544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">shouldUpdateExistingUserWithNewData</span>
-                <span class="method-start">6188 ms</span>
+                <span class="method-start">4545 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWith...)</span>
+                <span class="method-start">4861 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">6525 ms</span>
+                <span class="method-start">4862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetUp(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.userDataShouldContainId())</span>
+                <span class="method-start">4862 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userDataShouldContainId</span>
-                <span class="method-start">6861 ms</span>
+                <span class="method-start">5211 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testCleanUp</span>
+                <span class="method-start">5556 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown(public void pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.userDataShouldContainId())</span>
+                <span class="method-start">5901 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pl.globallogic.verification.ConfigurationVerificationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldLogRequestAndResponseData</span>
-                <span class="method-start">7178 ms</span>
+                <span class="method-start">5904 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

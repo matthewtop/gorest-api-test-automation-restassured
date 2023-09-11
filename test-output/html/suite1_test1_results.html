@@ -43,7 +43,7 @@
 	    		<span class="tooltiptextCustom">Copy Class name</span>
 			</div>
 	    </th> 
-	    <th id="testClassId">pl.globallogic.gorest.UserApiCrudBasicVerificationTest</th>
+	    <th id="testClassId">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</th>
 	    <th id="testClassNameId" hidden="true">UserApiCrudBasicVerificationTest</th>
 	  </tr>
 	  <tr>
@@ -109,21 +109,21 @@
 									<tr>
 		<td class="time">1694216515822</td>
 		<td class="header failedConfig" colspan="4" onClick="toggleElement('37a7cc56-2b34-4720-b95a-6b741134677b','block');changeSingleIcon('span-37a7cc56-2b34-4720-b95a-6b741134677b');" title="Click to expand/collapse" style="cursor: pointer;">
-		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</div>
 		<div style="float:right;">@BeforeMethod &nbsp;&nbsp;<span id='span-37a7cc56-2b34-4720-b95a-6b741134677b' class="glyphicon glyphicon-menu-down"></span></div>
 		</td>
 	</tr>
 			<tr>
 		<td class="time">1694216515822</td>
 		<td class="methodConfiguration">
-				<span class="description"><b>Class: </b>class pl.globallogic.gorest.UserApiCrudBasicVerificationTest</span><br>
+				<span class="description"><b>Class: </b>class pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</span><br>
 		<span class="description"><b>Method: </b>testSetUp</span><br>
 				<span class="duration"><b>Duration: </b>1,389s</span><br>
 		</td>
 		<td class="resultConfiguration">
 										<div class="stackTrace" id="37a7cc56-2b34-4720-b95a-6b741134677b">
-								<a href="javascript:toggleElement('exception-37a7cc56-2b34-4720-b95a-6b741134677b','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br>
+								<a href="javascript:toggleElement('exception-37a7cc56-2b34-4720-b95a-6b741134677b','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])</b></a><br>
 		    <div class="stackTrace" id="exception-37a7cc56-2b34-4720-b95a-6b741134677b">
 							io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br>
 							io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br>
@@ -147,7 +147,7 @@
 							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br>
 							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br>
 							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
+							pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
 							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>
 							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br>
 							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br>
@@ -177,8 +177,8 @@
 							org.testng.TestNG.run(TestNG.java:1082)<br>
 							com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>
 							com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br>
-									    <b>Caused by: </b> <a href="javascript:toggleElement('causedBy-37a7cc56-2b34-4720-b95a-6b741134677b','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br>
+									    <b>Caused by: </b> <a href="javascript:toggleElement('causedBy-37a7cc56-2b34-4720-b95a-6b741134677b','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])</a><br>
 			    <div class="stackTrace" id="causedBy-37a7cc56-2b34-4720-b95a-6b741134677b">
 									com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br>
 									com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br>
@@ -212,7 +212,7 @@
 									io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br>
 									io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br>
 									pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br>
-									pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
+									pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br>
 									java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>
 									java.base/java.lang.reflect.Method.invoke(Method.java:578)<br>
 									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br>
@@ -254,7 +254,7 @@
 											<tr>
 	<td class="time">1694216517217</td>
 	<td class="header skipped" colspan="4" onClick="toggleElement('8909f25d-6e25-4901-beb8-9f628f9aac97','block');changeSingleIcon('span-8909f25d-6e25-4901-beb8-9f628f9aac97');" title="Click to expand/collapse" style="cursor: pointer;">
-	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.UserApiCrudBasicVerificationTest</div>
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</div>
 	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-8909f25d-6e25-4901-beb8-9f628f9aac97' class="glyphicon glyphicon-menu-down"></span></div>
 	</td>
 	</tr>
@@ -273,8 +273,8 @@
 												==============================================================================================<br>
 												Total Passed: 0(+0), Failures: 0(+0), Skips: 2(+1)<br>
 												==============================================================================================<br>
-									<a href="javascript:toggleElement('exception-8909f25d-6e25-4901-beb8-9f628f9aac97','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</b></a><br/>
+									<a href="javascript:toggleElement('exception-8909f25d-6e25-4901-beb8-9f628f9aac97','block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])</b></a><br/>
 		<div class="stackTrace" id="exception-8909f25d-6e25-4901-beb8-9f628f9aac97">
 					io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)<br/>
 					io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br/>
@@ -298,7 +298,7 @@
 					io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
 					io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
 					pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-					pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
+					pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
 					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
 					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
 					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
@@ -328,8 +328,8 @@
 					org.testng.TestNG.run(TestNG.java:1082)<br/>
 					com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
 					com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br/>
-							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-8909f25d-6e25-4901-beb8-9f628f9aac97','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.OurUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
- at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.OurUser[&quot;message&quot;])</a><br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-8909f25d-6e25-4901-beb8-9f628f9aac97','block')" title="Click to expand/collapse">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])<br/>
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Authentication failed&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])</a><br/>
 			<div class="stackTrace" id="causedBy-8909f25d-6e25-4901-beb8-9f628f9aac97">
 							com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)<br/>
 							com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)<br/>
@@ -363,7 +363,7 @@
 							io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)<br/>
 							io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)<br/>
 							pl.globallogic.gorest.apis.UserAPI.createUser(UserAPI.java:34)<br/>
-							pl.globallogic.gorest.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
+							pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.testSetUp(UserApiCrudBasicVerificationTest.java:19)<br/>
 							java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
 							java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
 							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>

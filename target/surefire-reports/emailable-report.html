@@ -9,15 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7 578</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6 267</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">pl.globallogic.gorest.UserApiCrudBasicVerificationTest</td><td><a href="#m0">shouldCreateAUserAndReturnAnId</a></td><td rowspan="1">1694437637175</td><td rowspan="1">407</td></tr><tr class="passedeven"><td><a href="#m1">shouldDeleteUserUsingId</a></td><td rowspan="1">1694437637925</td><td rowspan="1">755</td></tr><tr class="passedeven"><td><a href="#m2">shouldFetchAllUsersFromDefaultPageBodyExtract</a></td><td rowspan="1">1694437639028</td><td rowspan="1">883</td></tr><tr class="passedeven"><td><a href="#m3">shouldUpdateExistingUserWithNewData</a></td><td rowspan="1">1694437640662</td><td rowspan="1">336</td></tr><tr class="passedeven"><td><a href="#m4">userDataShouldContainId</a></td><td rowspan="1">1694437641335</td><td rowspan="1">315</td></tr><tr class="passedodd"><td rowspan="1">pl.globallogic.verification.ConfigurationVerificationTest</td><td><a href="#m5">shouldLogRequestAndResponseData</a></td><td rowspan="1">1694437641652</td><td rowspan="1">378</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</td><td><a href="#m0">shouldUpdateExistingUserWithNewData</a></td><td rowspan="1">1694448733344</td><td rowspan="1">312</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest</td><td><a href="#m1">shouldCreateAUserAndReturnAnId</a></td><td rowspan="1">1694448731489</td><td rowspan="1">355</td></tr><tr class="passedeven"><td><a href="#m2">shouldDeleteUserUsingId</a></td><td rowspan="1">1694448732525</td><td rowspan="1">352</td></tr><tr class="passedeven"><td><a href="#m3">shouldFetchAllUsersFromDefaultPageBodyExtract</a></td><td rowspan="1">1694448732879</td><td rowspan="1">463</td></tr><tr class="passedeven"><td><a href="#m4">userDataShouldContainId</a></td><td rowspan="1">1694448734010</td><td rowspan="1">344</td></tr><tr class="passedodd"><td rowspan="1">pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest</td><td><a href="#m5">responseShouldBeValidAgainstSchema</a></td><td rowspan="1">1694448730296</td><td rowspan="1">805</td></tr><tr class="passedeven"><td rowspan="1">pl.globallogic.verification.ConfigurationVerificationTest</td><td><a href="#m6">shouldLogRequestAndResponseData</a></td><td rowspan="1">1694448734703</td><td rowspan="1">342</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">pl.globallogic.gorest.UserApiCrudBasicVerificationTest#shouldCreateAUserAndReturnAnId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">pl.globallogic.gorest.UserApiCrudBasicVerificationTest#shouldDeleteUserUsingId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">pl.globallogic.gorest.UserApiCrudBasicVerificationTest#shouldFetchAllUsersFromDefaultPageBodyExtract</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">pl.globallogic.gorest.UserApiCrudBasicVerificationTest#shouldUpdateExistingUserWithNewData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">pl.globallogic.gorest.UserApiCrudBasicVerificationTest#userDataShouldContainId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">pl.globallogic.verification.ConfigurationVerificationTest#shouldLogRequestAndResponseData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest#shouldUpdateExistingUserWithNewData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Resource not found&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at pl.globallogic.gorest.apis.UserAPI.updateUserInfo(UserAPI.java:61)
+	at pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest.shouldUpdateExistingUserWithNewData(UserApiCrudBasicVerificationTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pl.globallogic.gorest.model.GoRestUser), not marked as ignorable (5 known properties: &quot;gender&quot;, &quot;status&quot;, &quot;id&quot;, &quot;email&quot;, &quot;name&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Resource not found&quot;}&quot;; line: 1, column: 13] (through reference chain: pl.globallogic.gorest.model.GoRestUser[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 42 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest#shouldCreateAUserAndReturnAnId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest#shouldDeleteUserUsingId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest#shouldFetchAllUsersFromDefaultPageBodyExtract</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest#userDataShouldContainId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest#responseShouldBeValidAgainstSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">pl.globallogic.verification.ConfigurationVerificationTest#shouldLogRequestAndResponseData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

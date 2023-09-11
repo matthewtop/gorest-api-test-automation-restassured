@@ -1,6 +1,6 @@
 package pl.globallogic.gorest.model;
 
-public class OurUser {
+public class GoRestUser {
 
     private int id;
     private String name;
@@ -8,7 +8,7 @@ public class OurUser {
     private String gender;
     private String status;
 
-    public OurUser() {}
+    public GoRestUser() {}
 
     public int getId() {return id;}
 

@@ -1,62 +1,65 @@
-package pl.globallogic.gorest;
+package pl.globallogic.gorest.user;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pl.globallogic.gorest.dto.CreateUserRequestDTO;
-import pl.globallogic.gorest.model.OurUser;
+import pl.globallogic.gorest.model.GoRestUser;
+
 import pl.globallogic.gorest.user.testdata.UserApiTestDataGenerator;
 
 import java.util.List;
 
-public class UserApiCrudBasicVerificationTest extends BaseUserApiTest{
+public class UserApiCrudBasicVerificationTest extends BaseUserApiTest {
 
     private String ourUserId;
-    //private final UserAPI userAPI = new UserAPI();
 
 
-    @BeforeMethod
+    @BeforeMethod(onlyForGroups = {"update", "delete"})
     public void testSetUp() {
         CreateUserRequestDTO userPayload = UserApiTestDataGenerator.getRandomUser();
         ourUserId = String.valueOf(userAPI.createUser(userPayload).getId());
         logger.info("Created user id: {}", ourUserId);
-
     }
 
-    //Should fetch all users
-    @Test
+    @AfterMethod(onlyForGroups = {"update"})
+    public void testCleanUp(){
+        logger.info("Deleting user with id '{}' after testing completion",ourUserId);
+        userAPI.deleteUser(ourUserId);
+    }
+
+    @Test(groups = {"fetch"})
     public void shouldFetchAllUsersFromDefaultPageBodyExtract() {
         int expectedListLength = 10;
-        List<OurUser> users = userAPI.getAllUsers();
+        List<GoRestUser> users = userAPI.getAllUsers();
         logger.info("Users : {}", users);
         Assert.assertEquals(expectedListLength, users.size());
     }
 
-    @Test
+    @Test(groups = {"update"})
     public void userDataShouldContainId() {
-        OurUser ivan = userAPI.getUser(ourUserId);
+        GoRestUser mati = userAPI.getUser(ourUserId);
         String expectedUserName = "Mateusz Tolpa";
-        Assert.assertEquals(expectedUserName, ivan.getName());
+        Assert.assertEquals(expectedUserName, mati.getName());
     }
-    //should create new user and return id
-    @Test
+
+    @Test(groups = {"update"})
     public void shouldCreateAUserAndReturnAnId() {
         var userPayload  = UserApiTestDataGenerator.getRandomUser();
-        OurUser user = userAPI.createUser(userPayload);
+        GoRestUser user = userAPI.createUser(userPayload);
         logger.info("User object : {}", user);
         Assert.assertNotEquals(user.getId(), 0);
     }
 
-
-    //should update user info with new information
     @Test
     public void shouldUpdateExistingUserWithNewData() {
         CreateUserRequestDTO userPayload = UserApiTestDataGenerator.getRandomUser();
-        OurUser updatedUser = userAPI.updateUserInfo(ourUserId, userPayload);
+        GoRestUser updatedUser = userAPI.updateUserInfo(ourUserId, userPayload);
         Assert.assertEquals(userPayload.email(), updatedUser.getEmail());
     }
-    //should delete user from system
-    @Test
+
+    @Test(groups = {"delete"})
     public void shouldDeleteUserUsingId() {
         Assert.assertTrue(userAPI.deleteUser(ourUserId));
     }

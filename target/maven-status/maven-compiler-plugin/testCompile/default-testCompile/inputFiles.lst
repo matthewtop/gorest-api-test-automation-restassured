@@ -1,5 +1,5 @@
-D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\BaseUserApiTest.java
+D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\user\testdata\UserApiTestDataGenerator.java
 D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\verification\ConfigurationVerificationTest.java
-D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\testdata\UserApiTestDataGenerator.java
-D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\UserApiCrudBasicVerificationTest.java
-D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\verification\JsonSchemaValidationTest.java
+D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\user\schemavalidation\JsonSchemaValidationTest.java
+D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\user\UserApiCrudBasicVerificationTest.java
+D:\dev\javaPractice\gorest-api-test-automation-restassured\src\test\java\pl\globallogic\gorest\user\BaseUserApiTest.java

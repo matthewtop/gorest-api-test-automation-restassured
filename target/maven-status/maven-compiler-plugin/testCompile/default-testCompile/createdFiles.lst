@@ -1,5 +1,5 @@
-pl\globallogic\verification\JsonSchemaValidationTest.class
-pl\globallogic\gorest\BaseUserApiTest.class
-pl\globallogic\gorest\testdata\UserApiTestDataGenerator.class
-pl\globallogic\gorest\UserApiCrudBasicVerificationTest.class
+pl\globallogic\gorest\user\testdata\UserApiTestDataGenerator.class
+pl\globallogic\gorest\user\UserApiCrudBasicVerificationTest.class
+pl\globallogic\gorest\user\BaseUserApiTest.class
+pl\globallogic\gorest\user\schemavalidation\JsonSchemaValidationTest.class
 pl\globallogic\verification\ConfigurationVerificationTest.class

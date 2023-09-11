@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0,342">
+           time="0,805">
   <properties />
   
   
-            <testcase name="shouldLogRequestAndResponseData" time="0,342" classname="pl.globallogic.verification.ConfigurationVerificationTest" />
+            <testcase name="responseShouldBeValidAgainstSchema" time="0,805" classname="pl.globallogic.gorest.user.schemavalidation.JsonSchemaValidationTest" />
       
 </testsuite>

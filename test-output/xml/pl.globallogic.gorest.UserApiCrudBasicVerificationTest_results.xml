@@ -7,7 +7,7 @@
            time="1,389">
   <properties />
   
-            <testcase name="shouldCreateAUserAndReturnAnId" time="0.0" classname="pl.globallogic.gorest.UserApiCrudBasicVerificationTest">
+            <testcase name="shouldCreateAUserAndReturnAnId" time="0.0" classname="pl.globallogic.gorest.user.UserApiCrudBasicVerificationTest">
           <skipped />
     </testcase>
   

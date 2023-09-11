@@ -18,7 +18,7 @@
         <fasterxml.jackson.version>2.15.2</fasterxml.jackson.version>
         <restassured.version>5.3.0</restassured.version>
         <environment>dev</environment>
-        <token>edb4afe94ffa5dd5ee817c3eb2ff3a0408777f6781098e96969cd9cb742050d4</token>
+        <token>token_placeholder</token>
     </properties>
     <dependencies>
         <dependency>
